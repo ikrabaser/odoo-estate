@@ -9,7 +9,7 @@ class EstatePropertyOffer(models.Model):
     partner_id=fields.Many2one("res.partner",required = True)
     property_id =fields.Many2one("estate.property",required = True)
     status= fields.Selection(
-        selection=[('accepted','Kabul Et'),('refused','Reddet')])
+        selection=[('accepted','Kabul Edildi'),('refused','Reddedildi')])
 
 
     @api.model_create_multi
